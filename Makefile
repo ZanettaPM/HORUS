@@ -18,12 +18,12 @@ run_app:
 
 	mv 127.0.0.1:8050 pages_files
 
-	find pages_files -exec sed -i.bak 's|_dash-component-suites|HORUS/HORUS\\/_dash-component-suites|g' {} \;
-	find pages_files -exec sed -i.bak 's|_dash-layout|HORUS/HORUS/_dash-layout.json|g' {} \;
-	find pages_files -exec sed -i.bak 's|_dash-dependencies|HORUS/HORUS/_dash-dependencies.json|g' {} \;
-	find pages_files -exec sed -i.bak 's|_reload-hash|HORUS/HORUS/_reload-hash|g' {} \;
-	find pages_files -exec sed -i.bak 's|_dash-update-component|HORUS/HORUS/_dash-update-component|g' {} \;
-	find pages_files -exec sed -i.bak 's|assets|HORUS/HORUS/assets|g' {} \;
+	find pages_files -exec sed -i.bak 's|_dash-component-suites|HORUS\\/_dash-component-suites|g' {} \;
+	find pages_files -exec sed -i.bak 's|_dash-layout|HORUS/_dash-layout.json|g' {} \;
+	find pages_files -exec sed -i.bak 's|_dash-dependencies|HORUS/_dash-dependencies.json|g' {} \;
+	find pages_files -exec sed -i.bak 's|_reload-hash|HORUS/_reload-hash|g' {} \;
+	find pages_files -exec sed -i.bak 's|_dash-update-component|HORUS/_dash-update-component|g' {} \;
+	find pages_files -exec sed -i.bak 's|assets|HORUS/assets|g' {} \;
 
 	mv pages_files/_dash-layout pages_files/_dash-layout.json
 	mv pages_files/_dash-dependencies pages_files/_dash-dependencies.json
