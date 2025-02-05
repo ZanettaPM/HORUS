@@ -17,7 +17,7 @@ app.layout = html.Div([
     dcc.Dropdown(
         id='chart-type-dropdown',
         options=[
-            {'label': 'Grouped', 'value': 'group'},
+            {'label': 'Test', 'value': 'group'},
             {'label': 'Stacked', 'value': 'stack'}
         ],
         value='group',  # Default value
